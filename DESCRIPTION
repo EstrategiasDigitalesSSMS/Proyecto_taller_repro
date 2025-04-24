@@ -1,0 +1,18 @@
+Package: Proyecto_taller_repro
+Type: Package
+Title: The Title of the Project
+Version: 0.0.0.9000
+Authors@R: c(
+    person(given   = "Juan",
+           family  = "Cisternas-Ramos",
+           role    = c("aut", "cre", "cph"),
+           email   = "juancisternasr@gmail.com",
+           comment = c(ORCID = "1302-1701-3006-160X")))
+Description: A paragraph providing a full description of the project (on 
+    several lines...)
+URL: https://github.com/EstrategiasDigitalesSSMS/Proyecto_taller_repro
+BugReports: https://github.com/EstrategiasDigitalesSSMS/Proyecto_taller_repro/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
