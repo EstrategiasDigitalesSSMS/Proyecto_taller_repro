@@ -289,6 +289,42 @@
       "NeedsCompilation": "yes",
       "Repository": "CRAN"
     },
+    "V8": {
+      "Package": "V8",
+      "Version": "6.0.3",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Embedded JavaScript and WebAssembly Engine for R",
+      "Authors@R": "c( person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroenooms@gmail.com\", comment = c(ORCID = \"0000-0002-4035-0289\")), person(\"Jan Marvin\", \"Garbuszus\", role = \"ctb\"))",
+      "Description": "An R interface to V8 <https://v8.dev>: Google's open source JavaScript and WebAssembly engine. This package can be compiled either with V8 version 6  and up or NodeJS when built as a shared library.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://jeroen.r-universe.dev/V8",
+      "BugReports": "https://github.com/jeroen/v8/issues",
+      "SystemRequirements": "V8 engine version 6+ is needed for ES6 and WASM support. On Linux you can build against libv8-dev (Debian) or v8-devel (Fedora). We also provide static libv8 binaries for most platforms, see the README for details.",
+      "NeedsCompilation": "yes",
+      "VignetteBuilder": "knitr",
+      "Imports": [
+        "Rcpp (>= 0.12.12)",
+        "jsonlite (>= 1.0)",
+        "curl (>= 1.0)",
+        "utils"
+      ],
+      "LinkingTo": [
+        "Rcpp"
+      ],
+      "Suggests": [
+        "testthat",
+        "knitr",
+        "rmarkdown"
+      ],
+      "RoxygenNote": "7.3.1",
+      "Language": "en-US",
+      "Encoding": "UTF-8",
+      "Biarch": "true",
+      "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>), Jan Marvin Garbuszus [ctb]",
+      "Maintainer": "Jeroen Ooms <jeroenooms@gmail.com>",
+      "Repository": "CRAN"
+    },
     "askpass": {
       "Package": "askpass",
       "Version": "1.2.0",
@@ -772,6 +808,48 @@
       "Maintainer": "Jennifer Bryan <jenny@stat.ubc.ca>",
       "Repository": "CRAN"
     },
+    "cffr": {
+      "Package": "cffr",
+      "Version": "1.2.0",
+      "Source": "Repository",
+      "Title": "Generate Citation File Format ('cff') Metadata for R Packages",
+      "Authors@R": "c( person(\"Diego\", \"Hernangómez\", , \"diego.hernangomezherrero@gmail.com\", role = c(\"aut\", \"cre\", \"cph\"), comment = c(ORCID = \"0000-0001-8457-4658\")), person(\"João\", \"Martins\", role = \"rev\", comment = c(ORCID = \"0000-0001-7961-4280\")), person(\"Scott\", \"Chamberlain\", role = \"rev\", comment = c(ORCID = \"0000-0003-1444-9135\")) )",
+      "Description": "The Citation File Format version 1.2.0 <doi:10.5281/zenodo.5171937> is a human and machine readable file format which provides citation metadata for software. This package provides core utilities to generate and validate this metadata.",
+      "License": "GPL (>= 3)",
+      "URL": "https://docs.ropensci.org/cffr/, https://github.com/ropensci/cffr",
+      "BugReports": "https://github.com/ropensci/cffr/issues",
+      "Depends": [
+        "R (>= 4.0.0)"
+      ],
+      "Imports": [
+        "cli (>= 2.0.0)",
+        "desc (>= 1.3.0)",
+        "jsonlite (>= 1.7.2)",
+        "jsonvalidate (>= 1.1.0)",
+        "yaml (>= 2.2.1)"
+      ],
+      "Suggests": [
+        "bibtex (>= 0.5.0)",
+        "knitr",
+        "lifecycle",
+        "rmarkdown",
+        "testthat (>= 3.0.0)",
+        "usethis"
+      ],
+      "VignetteBuilder": "knitr",
+      "Config/Needs/website": "devtools",
+      "Config/testthat/edition": "3",
+      "Config/testthat/parallel": "true",
+      "Encoding": "UTF-8",
+      "LazyData": "true",
+      "RoxygenNote": "7.3.2",
+      "X-schema.org-isPartOf": "https://ropensci.org",
+      "X-schema.org-keywords": "attribution, citation, credit, citation-files, cff, metadata, citation-file-format, cran, r, r-package, ropensci, rstats, r-cran",
+      "NeedsCompilation": "no",
+      "Author": "Diego Hernangómez [aut, cre, cph] (<https://orcid.org/0000-0001-8457-4658>), João Martins [rev] (<https://orcid.org/0000-0001-7961-4280>), Scott Chamberlain [rev] (<https://orcid.org/0000-0003-1444-9135>)",
+      "Maintainer": "Diego Hernangómez <diego.hernangomezherrero@gmail.com>",
+      "Repository": "CRAN"
+    },
     "cli": {
       "Package": "cli",
       "Version": "3.6.3",
@@ -849,6 +927,25 @@
       "NeedsCompilation": "no",
       "Author": "Matthew Lincoln [aut, cre] (<https://orcid.org/0000-0002-4387-3384>), Louis Maddox [ctb], Steve Simpson [ctb], Jennifer Bryan [ctb]",
       "Maintainer": "Matthew Lincoln <matthew.d.lincoln@gmail.com>",
+      "Repository": "CRAN"
+    },
+    "clisymbols": {
+      "Package": "clisymbols",
+      "Version": "1.2.0",
+      "Source": "Repository",
+      "Title": "Unicode Symbols at the R Prompt",
+      "Authors@R": "c( person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"aut\", \"cre\")), person(\"Sindre\", \"Sorhus\", role = \"aut\") )",
+      "Description": "A small subset of Unicode symbols, that are useful when building command line applications. They fall back to alternatives on terminals that do not support Unicode. Many symbols were taken from the 'figures' 'npm' package (see <https://github.com/sindresorhus/figures>).",
+      "License": "MIT + file LICENSE",
+      "URL": "https://github.com/gaborcsardi/clisymbols",
+      "BugReports": "https://github.com/gaborcsardi/clisymbols/issues",
+      "Suggests": [
+        "testthat"
+      ],
+      "Encoding": "UTF-8",
+      "NeedsCompilation": "no",
+      "Author": "Gábor Csárdi [aut, cre], Sindre Sorhus [aut]",
+      "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
       "Repository": "CRAN"
     },
     "commonmark": {
@@ -2161,6 +2258,39 @@
       "Maintainer": "Jennifer Bryan <jenny@posit.co>",
       "Repository": "CRAN"
     },
+    "grates": {
+      "Package": "grates",
+      "Version": "1.4.3",
+      "Source": "Repository",
+      "Title": "Grouped Date Classes",
+      "Authors@R": "c( person( given = \"Tim\", family = \"Taylor\", role = c(\"aut\", \"cre\"), email = \"tim.taylor@hiddenelephants.co.uk\", comment = c(ORCID = \"0000-0002-8587-7113\") ) )",
+      "Description": "Provides a coherent interface and implementation for creating grouped date classes.",
+      "URL": "https://www.reconverse.org/grates/, https://github.com/reconverse/grates",
+      "License": "MIT + file LICENSE",
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.3.2",
+      "Depends": [
+        "R (>= 3.6.0)"
+      ],
+      "Suggests": [
+        "ggplot2",
+        "scales",
+        "vctrs",
+        "rlang",
+        "litedown",
+        "outbreaks",
+        "testthat (>= 3.0.0)"
+      ],
+      "VignetteBuilder": "litedown",
+      "Config/testthat/edition": "3",
+      "Imports": [
+        "utils"
+      ],
+      "NeedsCompilation": "no",
+      "Author": "Tim Taylor [aut, cre] (<https://orcid.org/0000-0002-8587-7113>)",
+      "Maintainer": "Tim Taylor <tim.taylor@hiddenelephants.co.uk>",
+      "Repository": "CRAN"
+    },
     "gtable": {
       "Package": "gtable",
       "Version": "0.3.6",
@@ -2199,6 +2329,37 @@
       "NeedsCompilation": "no",
       "Author": "Hadley Wickham [aut], Thomas Lin Pedersen [aut, cre], Posit Software, PBC [cph, fnd]",
       "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
+      "Repository": "CRAN"
+    },
+    "gtools": {
+      "Package": "gtools",
+      "Version": "3.9.5",
+      "Source": "Repository",
+      "Title": "Various R Programming Tools",
+      "Description": "Functions to assist in R programming, including: - assist in developing, updating, and maintaining R and R packages ('ask', 'checkRVersion', 'getDependencies', 'keywords', 'scat'), - calculate the logit and inverse logit transformations ('logit', 'inv.logit'), - test if a value is missing, empty or contains only NA and NULL values ('invalid'), - manipulate R's .Last function ('addLast'), - define macros ('defmacro'), - detect odd and even integers ('odd', 'even'), - convert strings containing non-ASCII characters (like single quotes) to plain ASCII ('ASCIIfy'), - perform a binary search ('binsearch'), - sort strings containing both numeric and character components ('mixedsort'), - create a factor variable from the quantiles of a continuous variable ('quantcut'), - enumerate permutations and combinations ('combinations', 'permutation'), - calculate and convert between fold-change and log-ratio ('foldchange', 'logratio2foldchange', 'foldchange2logratio'), - calculate probabilities and generate random numbers from Dirichlet distributions ('rdirichlet', 'ddirichlet'), - apply a function over adjacent subsets of a vector ('running'), - modify the TCP_NODELAY ('de-Nagle') flag for socket objects, - efficient 'rbind' of data frames, even if the column names don't match ('smartbind'), - generate significance stars from p-values ('stars.pval'), - convert characters to/from ASCII codes ('asc', 'chr'), - convert character vector to ASCII representation ('ASCIIfy'), - apply title capitalization rules to a character vector ('capwords').",
+      "Authors@R": "c(person(\"Gregory R.\", \"Warnes\", role = \"aut\"), person(\"Ben\", \"Bolker\", role = c(\"aut\", \"cre\"), email = \"bolker@mcmaster.ca\", comment=c(ORCID=\"0000-0002-2127-0443\")), person(\"Thomas\", \"Lumley\", role = \"aut\"), person(\"Arni\", \"Magnusson\", role = \"aut\"), person(\"Bill\", \"Venables\", role = \"aut\"), person(\"Genei\", \"Ryodan\", role = \"aut\"), person(\"Steffen\", \"Moeller\", role = \"aut\"), person(\"Ian\", \"Wilson\", role = \"ctb\"), person(\"Mark\", \"Davis\", role = \"ctb\"), person(\"Nitin\", \"Jain\", role=\"ctb\"), person(\"Scott\", \"Chamberlain\", role = \"ctb\"))",
+      "License": "GPL-2",
+      "Depends": [
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "URL": "https://github.com/r-gregmisc/gtools",
+      "BugReports": "https://github.com/r-gregmisc/gtools/issues",
+      "Language": "en-US",
+      "Suggests": [
+        "car",
+        "gplots",
+        "knitr",
+        "rstudioapi",
+        "SGP",
+        "taxize"
+      ],
+      "RoxygenNote": "7.2.3",
+      "Encoding": "UTF-8",
+      "NeedsCompilation": "yes",
+      "Author": "Gregory R. Warnes [aut], Ben Bolker [aut, cre] (<https://orcid.org/0000-0002-2127-0443>), Thomas Lumley [aut], Arni Magnusson [aut], Bill Venables [aut], Genei Ryodan [aut], Steffen Moeller [aut], Ian Wilson [ctb], Mark Davis [ctb], Nitin Jain [ctb], Scott Chamberlain [ctb]",
+      "Maintainer": "Ben Bolker <bolker@mcmaster.ca>",
       "Repository": "CRAN"
     },
     "haven": {
@@ -2595,6 +2756,54 @@
       "Maintainer": "Rich FitzJohn <rich.fitzjohn@gmail.com>",
       "Repository": "CRAN"
     },
+    "incidence2": {
+      "Package": "incidence2",
+      "Version": "2.6.2",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Compute, Handle and Plot Incidence of Dated Events",
+      "Authors@R": "c( person(\"Tim\", \"Taylor\", role = c(\"aut\", \"cre\"), email = \"tim.taylor@hiddenelephants.co.uk\", comment = c(ORCID = \"0000-0002-8587-7113\")), person(\"Thibaut\", \"Jombart\", role = \"ctb\", email = \"thibautjombart@gmail.com\") )",
+      "Description": "Provides functions and classes to compute, handle and visualise  incidence from dated events for a defined time interval. Dates can be  provided in various standard formats. The class 'incidence2' is used to store computed incidence and can be easily manipulated, subsetted, and plotted.",
+      "Encoding": "UTF-8",
+      "License": "MIT + file LICENSE",
+      "URL": "https://www.reconverse.org/incidence2/, https://github.com/reconverse/incidence2",
+      "BugReports": "https://github.com/reconverse/incidence2/issues",
+      "Depends": [
+        "grates (>= 1.3.0)",
+        "R (>= 4.1.0)"
+      ],
+      "Imports": [
+        "grDevices",
+        "data.table (>= 1.15.0)",
+        "pillar",
+        "utils",
+        "stats",
+        "tibble",
+        "tidyr",
+        "dplyr (>= 1.1.0)",
+        "tidyselect",
+        "rlang",
+        "vctrs",
+        "ympes (>= 1.3.0)"
+      ],
+      "RoxygenNote": "7.3.2",
+      "Suggests": [
+        "outbreaks",
+        "ggplot2",
+        "scales",
+        "litedown",
+        "testthat (>= 3.0.0)",
+        "ciTools",
+        "withr"
+      ],
+      "VignetteBuilder": "litedown",
+      "Config/testthat/edition": "3",
+      "LazyData": "true",
+      "NeedsCompilation": "no",
+      "Author": "Tim Taylor [aut, cre] (<https://orcid.org/0000-0002-8587-7113>), Thibaut Jombart [ctb]",
+      "Maintainer": "Tim Taylor <tim.taylor@hiddenelephants.co.uk>",
+      "Repository": "CRAN"
+    },
     "ini": {
       "Package": "ini",
       "Version": "0.3.1",
@@ -2702,6 +2911,37 @@
       "Encoding": "UTF-8",
       "NeedsCompilation": "yes",
       "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>), Duncan Temple Lang [ctb], Lloyd Hilaiel [cph] (author of bundled libyajl)",
+      "Repository": "CRAN"
+    },
+    "jsonvalidate": {
+      "Package": "jsonvalidate",
+      "Version": "1.5.0",
+      "Source": "Repository",
+      "Title": "Validate 'JSON' Schema",
+      "Authors@R": "c(person(\"Rich\", \"FitzJohn\", role = c(\"aut\", \"cre\"), email = \"rich.fitzjohn@gmail.com\"), person(\"Rob\", \"Ashton\", role = \"aut\"), person(\"Alex\", \"Hill\", role = \"ctb\"), person(\"Alicia\", \"Schep\", role = \"ctb\"), person(\"Ian\", \"Lyttle\", role = \"ctb\"), person(\"Kara\", \"Woo\", role = \"ctb\"), person(\"Mathias\", \"Buus\", role = c(\"aut\", \"cph\"), comment = \"Author of bundled imjv library\"), person(\"Evgeny\", \"Poberezkin\", role = c(\"aut\", \"cph\"), comment = \"Author of bundled Ajv library\"))",
+      "Maintainer": "Rich FitzJohn <rich.fitzjohn@gmail.com>",
+      "Description": "Uses the node library 'is-my-json-valid' or 'ajv' to validate 'JSON' against a 'JSON' schema.  Drafts 04, 06 and 07 of 'JSON' schema are supported.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://docs.ropensci.org/jsonvalidate/, https://github.com/ropensci/jsonvalidate",
+      "BugReports": "https://github.com/ropensci/jsonvalidate/issues",
+      "Imports": [
+        "R6",
+        "V8"
+      ],
+      "Suggests": [
+        "knitr",
+        "jsonlite",
+        "rmarkdown",
+        "testthat",
+        "withr"
+      ],
+      "RoxygenNote": "7.3.2",
+      "VignetteBuilder": "knitr",
+      "Encoding": "UTF-8",
+      "Language": "en-GB",
+      "Config/testthat/edition": "3",
+      "NeedsCompilation": "no",
+      "Author": "Rich FitzJohn [aut, cre], Rob Ashton [aut], Alex Hill [ctb], Alicia Schep [ctb], Ian Lyttle [ctb], Kara Woo [ctb], Mathias Buus [aut, cph] (Author of bundled imjv library), Evgeny Poberezkin [aut, cph] (Author of bundled Ajv library)",
       "Repository": "CRAN"
     },
     "knitr": {
@@ -3812,6 +4052,51 @@
       "NeedsCompilation": "no",
       "Author": "Gábor Csárdi [cre, aut]",
       "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+      "Repository": "CRAN"
+    },
+    "rcompendium": {
+      "Package": "rcompendium",
+      "Version": "1.3",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Create a Package or Research Compendium Structure",
+      "Authors@R": "c( person(given   = \"Nicolas\", family  = \"Casajus\", role    = c(\"aut\", \"cre\", \"cph\"), email   = \"nicolas.casajus@fondationbiodiversite.fr\", comment = c(ORCID = \"0000-0002-5537-5294\")))",
+      "Description": "Makes easier the creation of R package or research compendium  (i.e. a predefined files/folders structure) so that users can focus on the  code/analysis instead of wasting time organizing files. A full  ready-to-work structure is set up with some additional features: version  control, remote repository creation, CI/CD configuration (check package  integrity under several OS, test code with 'testthat', and build and deploy  website using 'pkgdown'). This package heavily relies on the R packages  'devtools' and 'usethis' and follows recommendations made by Wickham H.  (2015) <ISBN:9781491910597> and Marwick B. et al. (2018)  <doi:10.7287/peerj.preprints.3192v2>.",
+      "URL": "https://github.com/FRBCesab/rcompendium, https://frbcesab.github.io/rcompendium/",
+      "BugReports": "https://github.com/FRBCesab/rcompendium/issues",
+      "License": "GPL (>= 2)",
+      "Encoding": "UTF-8",
+      "Depends": [
+        "R (>= 2.10)"
+      ],
+      "Imports": [
+        "cffr",
+        "clisymbols",
+        "crayon",
+        "devtools",
+        "gert",
+        "gh",
+        "gtools",
+        "renv",
+        "rmarkdown",
+        "rstudioapi",
+        "stringr",
+        "usethis",
+        "utils",
+        "xfun"
+      ],
+      "RoxygenNote": "7.2.3",
+      "VignetteBuilder": "knitr",
+      "Suggests": [
+        "fs",
+        "knitr",
+        "testthat (>= 3.0.0)",
+        "withr"
+      ],
+      "Config/testthat/edition": "3",
+      "NeedsCompilation": "no",
+      "Author": "Nicolas Casajus [aut, cre, cph] (<https://orcid.org/0000-0002-5537-5294>)",
+      "Maintainer": "Nicolas Casajus <nicolas.casajus@fondationbiodiversite.fr>",
       "Repository": "CRAN"
     },
     "readr": {
@@ -5802,6 +6087,39 @@
       "URL": "https://github.com/vubiostat/r-yaml/",
       "BugReports": "https://github.com/vubiostat/r-yaml/issues",
       "NeedsCompilation": "yes",
+      "Repository": "CRAN"
+    },
+    "ympes": {
+      "Package": "ympes",
+      "Version": "1.9.0",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Collection of Helper Functions",
+      "Authors@R": "c( person( given = \"Tim\", family = \"Taylor\", role = c(\"aut\", \"cre\", \"cph\"), email = \"tim.taylor@hiddenelephants.co.uk\", comment = c(ORCID = \"0000-0002-8587-7113\") ), person( given = \"R Core Team\", role = \"cph\", comment = \"fstrcapture uses code from strcapture\" ), person( given = \"Toby\", family = \"Hocking\", role = \"cph\", comment = \"fstrcapture uses code from nc::capture_first_vec\" ))",
+      "Description": "Provides a collection of lightweight helper functions (imps) both for interactive use and for inclusion within other packages. These include functions for minimal input assertions, visualising colour palettes, quoting user input, searching rows of a data frame and capturing string tokens.",
+      "License": "GPL-3",
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.3.2",
+      "Suggests": [
+        "tinytest",
+        "litedown",
+        "clipr"
+      ],
+      "URL": "https://timtaylor.github.io/ympes/",
+      "BugReports": "https://github.com/TimTaylor/ympes/issues",
+      "Depends": [
+        "R (>= 3.5.0)"
+      ],
+      "Imports": [
+        "graphics",
+        "grDevices",
+        "methods",
+        "utils"
+      ],
+      "VignetteBuilder": "litedown",
+      "NeedsCompilation": "no",
+      "Author": "Tim Taylor [aut, cre, cph] (<https://orcid.org/0000-0002-8587-7113>), R Core Team [cph] (fstrcapture uses code from strcapture), Toby Hocking [cph] (fstrcapture uses code from nc::capture_first_vec)",
+      "Maintainer": "Tim Taylor <tim.taylor@hiddenelephants.co.uk>",
       "Repository": "CRAN"
     },
     "zip": {
